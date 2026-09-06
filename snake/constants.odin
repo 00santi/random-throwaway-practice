@@ -1,0 +1,15 @@
+package snake
+
+Vec2i :: [2]i32
+
+WINDOW_SIZE :: 850
+NO_CELLS :: 20
+MAX_SNAKE_SIZE :: NO_CELLS * NO_CELLS
+CELL_SIZE :: 16
+CANVAS_SIZE :: NO_CELLS * CELL_SIZE
+CAMERA_ZOOM: f32 : f32(WINDOW_SIZE) / f32(CANVAS_SIZE)
+TICK_RATE: f32 : 0.13
+UP :: Vec2i {0, -1}
+DOWN :: Vec2i {0, 1}
+LEFT :: Vec2i {-1, 0}
+RIGHT :: Vec2i {1, 0}
